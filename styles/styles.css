@@ -1,0 +1,41 @@
+:root {
+    --font-size-title-1: 3em;
+    --font-size-title-2: 1.5em;
+    --green: #cee5d0;
+    --belge: #f3f0d7;
+    --brown: #e0c097;
+    --red: #ff7878;
+    --shadow-box: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: var(--belge);
+    color: var(--brown);
+    text-shadow: 0 0 2px black;
+    box-shadow: var(--shadow-box);
+    text-align: center;
+    padding: 1em 0;
+}
+.header__titles,
+.icon-blog {
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon-blog {
+    transform: scale(0.8);
+}
+.title-1 {
+    margin: 0;
+    font-size: var(--font-size-title-1);
+}
+.title-2 {
+    margin: 0;
+    font-size: var(--font-size-title-2);
+    font-weight: normal;
+}
