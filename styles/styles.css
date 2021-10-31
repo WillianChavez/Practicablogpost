@@ -1,6 +1,7 @@
 :root {
     --font-size-title-1: 3em;
-    --font-size-title-2: 1.5em;
+    --font-size-title-2: 1.7em;
+    --font-size-p: 1.3em;
     --green: #cee5d0;
     --belge: #f3f0d7;
     --brown: #e0c097;
@@ -8,16 +9,16 @@
     --shadow-box: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 body {
+    position: relative;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0;
     margin: 0;
+    height: 100vh;
 }
-
+/* HEADER  */
 .header {
     background-color: var(--belge);
     color: var(--brown);
-    text-shadow: 0 0 2px black;
     box-shadow: var(--shadow-box);
     text-align: center;
     padding: 1em 0;
@@ -38,4 +39,51 @@ body {
     margin: 0;
     font-size: var(--font-size-title-2);
     font-weight: normal;
+}
+
+/* NAVIGATOR */
+.nav {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid var(--brown);
+    margin-top: 0.5em;
+}
+.nav__options {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.option a {
+    text-decoration: none;
+    font-size: var(--font-size-p);
+    color: var(--red);
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 400px) {
+    .nav__options {
+        flex-direction: column;
+    }
+    .option a {
+        width: 100%;
+    }
+}
+
+.article {
+    width: 70%;
+    margin: 3em auto;
+    padding: 2em 1em;
+    border: 5px solid var(--brown);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--belge);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
 }
